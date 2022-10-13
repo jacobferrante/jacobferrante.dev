@@ -182,7 +182,6 @@ nav {
 
 @media screen and (min-width: 768px) {
 
-/* ABOUT */
   .headshot {
     width: 10%;
     width: 10%;
@@ -242,14 +241,14 @@ nav {
   }
 
   .contact-form input {
-    height: 5vh;
+    height: 2rem;
     width: 25%;
     font-size: 1em;
     padding: 0.2rem;
   }
 
   .contact-form textarea {
-    height: 10vh;
+    height: 4rem;
     width: 25%;
     font-size: 1em;
     padding: 0.2rem;
@@ -259,3 +258,4 @@ nav {
     padding: 0.5rem;
   }
 }
+
