@@ -1,0 +1,261 @@
+/* BASE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Section */
+section {
+  padding: 1rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: none;
+}
+
+.links a {
+  color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Silkscreen", cursive;
+  color: slategrey;
+}
+
+/* FRONT PAGE */
+
+.front-page {
+  min-height: 100vh;
+  background: white;
+  color: slategrey;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ABOUT */
+.about {
+  padding-top: 25vh;
+  text-align: center;
+}
+
+.about h1 {
+  padding-top: 1rem;
+}
+
+.about p {
+  padding: 1rem;
+}
+
+.headshot {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Languages */
+.languages {
+  color: slategrey;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background: #f4f4f4;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio h1 {
+  text-align: center;
+  color: slategray;
+}
+
+.portfolio-item {
+  margin-top: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.portfolio p {
+  padding: 0.5rem;
+}
+
+.portfolio-item a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio i {
+  font-size: 2rem;
+}
+
+.portfolio img {
+  display: none;
+}
+
+/* CONTACT */
+.contact {
+  padding: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+/* CONTACT FORM */
+.contact-form {
+  padding: 1rem;
+}
+
+.contact-form button {
+  background: #f4f4f4;
+  color: slategrey;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.contact-form ul {
+  list-style: none;
+}
+
+.contact-form input {
+  height: 5vh;
+  width: 90%;
+  font-size: 1em;
+  padding: 0.2rem;
+}
+
+.contact-form textarea {
+  height: 10vh;
+  width: 90%;
+  font-size: 1em;
+  padding: 0.2rem;
+}
+
+.contact-form li {
+  padding: 0.5rem;
+}
+
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact i {
+  font-size: 2rem;
+  color: slategrey;
+}
+
+.contact h3 {
+  color: slategrey;
+  padding-bottom: 0.5rem;
+}
+
+.contact a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+
+/* ABOUT */
+  .headshot {
+    width: 10%;
+    width: 10%;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+    width: 50%;
+    transform: translateX(50%);
+  }
+/* NAV */
+  .links {
+    display: unset;
+  }
+
+  .links a {
+    text-decoration: none;
+    padding-left: 1rem;
+  }
+
+/* PORTFOLIO */
+  .portfolio h1 {
+    font-size: 3rem;
+    padding: 1.5rem;
+  }
+
+  .portfolio h3 {
+    font-size: 2rem;
+  }
+
+  .portfolio p {
+    font-size: 1.5rem;
+    width: 50%;
+    transform: translateX(50%);
+  }
+
+  .portfolio img {
+    display: unset;
+    height: 25vh;
+  }
+
+  .portfolio-item {
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+/* CONTACT */
+  .contact h3 {
+    font-size: 3rem;
+  }
+
+  .contact i {
+    font-size: 2rem;
+  }
+
+  .contact-form input {
+    height: 5vh;
+    width: 25%;
+    font-size: 1em;
+    padding: 0.2rem;
+  }
+
+  .contact-form textarea {
+    height: 10vh;
+    width: 25%;
+    font-size: 1em;
+    padding: 0.2rem;
+  }
+
+  .contact-form li {
+    padding: 0.5rem;
+  }
+}

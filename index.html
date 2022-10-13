@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Ferrante</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <!-- FRONT PAGE -->
+    <section class="front-page">
+      <!-- Navigation -->
+      <nav>
+        <div class="logo">
+          <h1>Jacob Ferrante</h1>
+        </div>
+        <div class="links">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <!-- About -->
+      <div class="about">
+        <img src="./assets/headshot.jpg" class="headshot" alt="" />
+        <h1>Hi, I'm Jacob</h1>
+        <p>
+          I'm a developer based out of Morgantown, West Virginia. I enjoy
+          building things on the web and seeing how I can automate the busy work
+          with best DevOps practices.
+        </p>
+      </div>
+      <!-- Language Icons -->
+      <div class="languages">
+        <i class="devicon-python-plain"></i>
+        <i class="devicon-linux-plain"></i>
+        <i class="devicon-ansible-plain"></i>
+        <i class="devicon-terraform-plain"></i>
+        <i class="devicon-docker-plain"></i>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+      <h1>Portfolio</h1>
+      <hr />
+      <!-- Portfolio Item - Peakbagger -->
+      <div class="portfolio-item">
+        <h3>peakbagger</h3>
+        <p>
+          Peakbagger is a RESTFUL API built with a simple front-end. It's for
+          tracking hiking data. The user can create a hike, update it, and
+          delete it via the front-end using the Javascript Fetch API. You can
+          also use a tool like Postman to send requests to retrieve/manipulate
+          data.
+        </p>
+        <a href="http://github.com/jacobferrante/peakbagger">
+          <i class="devicon-github-original"></i>
+        </a>
+      </div>
+      <!-- Portfolio Item - Configuration Maker -->
+      <div class="portfolio-item">
+        <h3>configuration maker</h3>
+        <p>
+          A command line tool built using Python, PyYAML, and Jinja2. It allows
+          the user to create question templates and output templates. The script
+          asks the user the questions predefined by the question templates and
+          outputs the answer into the configuration output templates.
+        </p>
+        <a href="http://github.com/jacobferrante/configmaker">
+          <i class="devicon-github-original"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h3>Get in Touch!</h3>
+      <div class="contact-form">
+        <form
+          action="https://formsubmit.co/jacobferrante@protonmail.com"
+          method="POST"
+        >
+          <ul>
+            <label for="fullName">Name</label>
+            <li>
+              <input type="text" name="name" required placeholder="name" />
+            </li>
+            <label for="email">Email</label>
+            <li>
+              <input type="email" name="email" required placeholder="email" />
+            </li>
+            <label for="yourMessage">Message</label>
+            <li>
+              <textarea
+                name="message"
+                placeholder="What's on your mind?"
+              ></textarea>
+            </li>
+            <button type="submit">Send</button>
+          </ul>
+        </form>
+      </div>
+
+      <a href="http://github.com/jacobferrante">
+        <i class="devicon-github-original"></i>
+      </a>
+      <a href="http://linkedin.com/in/jacobferrante">
+        <i class="devicon-linkedin-plain"></i>
+      </a>
+      <a href="http://linkedin.com/in/jacobferrante">
+        <i class="devicon-email-plain"></i>
+      </a>
+    </section>
+  </body>
+</html>
