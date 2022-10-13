@@ -241,14 +241,14 @@ nav {
   }
 
   .contact-form input {
-    height: 2rem;
+    height: 3rem;
     width: 25%;
     font-size: 1em;
     padding: 0.2rem;
   }
 
   .contact-form textarea {
-    height: 4rem;
+    height: 6rem;
     width: 25%;
     font-size: 1em;
     padding: 0.2rem;
