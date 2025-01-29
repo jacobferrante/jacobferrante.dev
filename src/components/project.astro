@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import githubIcon from "../assets/github.svg"
+
+
+interface Props {
+    projectName: string;
+    projectDescription: string;
+    projectTech: string;
+    githubLink?: string;
+    websiteLink?: string;
+    projectImage?: string;
+}
+
+const {projectName, projectDescription, projectTech, githubLink, websiteLink, projectImage} = Astro.props   
+---
+<div class="flex flex-col items-center justify-center gap-2 text-center px-8 font-semibold">
+    <a href={websiteLink}>
+        <h1 class=" text-4xl mb-2 text-cyan-600 xl:text-5xl">{projectName}</h1> 
+    </a>
+    <p class="text-md xl:text-2xl">{projectDescription}</p>
+    <p class="text-xs xl:text-xl">{projectTech}</p>
+    <Image src={githubIcon} alt="githubIcon" class="w-8 h-auto mt-2"></Image>
+</div>

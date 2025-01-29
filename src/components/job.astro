@@ -1,0 +1,15 @@
+---
+interface Props {
+    jobTitle: string;
+    jobDates: string;
+    companyName: string;
+}
+
+const {jobTitle, jobDates, companyName} = Astro.props;
+---
+
+<h1 class="text-sm font-bold text-center mt-6 text-slate-800 xl:text-2xl xl:text-left">{companyName} | {jobDates}</h1>
+<h1 class="text-sm text-center mt-2 text-slate-800 font-semibold xl:text-lg xl:text-left">{jobTitle}</h1>
+<ul class="list-disc mx-2 mt-4 text-sm">
+    <slot />
+</ul>
