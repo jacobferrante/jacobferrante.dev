@@ -41,8 +41,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		<div class="flex h-full justify-center items-center flex-col text-center" id="home">
 			<Image src={headshot} alt="headshot iamge of jacob ferrante" class="w-40 xl:w-56 h-auto mb-4"/>
 			<h1 class="text-3xl text-cyan-600 mb-4 font-bold inter-100 xl:text-6xl">Hi, I'm Jacob</h1>
-			<p class="text-lg font-bold text-slate-800 xl:text-2xl xl:w-3/12">A software developer based out of Morgantown, WV.</p>
-			<div class="border-y-2 border-cyan-600 h-24 w-10/12 flex mx-auto flex-row justify-around items-center xl:w-2/12 xl:mt-8">
+			<p class="text-lg font-bold text-slate-800 xl:text-2xl xl:w-4/12 2xl:3/12">A software developer based out of Morgantown, WV.</p>
+			<div class="border-y-2 border-cyan-600 mt-8 h-24 w-10/12 flex mx-auto flex-row justify-around items-center xl:w-2/12">
 				<a href="https://github.com/jacobferrante">
 					<Image src={githubIcon} alt="github icon" class="w-8"/>
 				</a>
@@ -79,7 +79,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 	<div class="min-h-screen xl:w-7/12 xl:mx-auto " id="projects">
 		<h1 class="text-3xl text-center mt-2 mb-6 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">Projects</h1>
-		<Project projectName="curb." projectDescription="A digital publication site based around cycling culture" projectTech="SvelteKit, TailwindCSS, Pocketbase" websiteLink='https://curb.world' projectImage={curb}/>
+		<Project 
+			projectName="curb." 
+			projectDescription="A digital publication site based around cycling culture. Built using Sveltekit & TailwindCSS, utilizes a backend powered by Pocketbase." 
+			projectTech="SvelteKit, TailwindCSS, Pocketbase" 
+			websiteLink='https://curb.world'>
+		</Project>
 	</div>
 
 </Layout>
