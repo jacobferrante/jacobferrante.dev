@@ -25,7 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 <Layout>
 
-		<navagation class="mx-8 gap-4 flex justify-between mt-2 xl:gap-8 xl:w-8/12 xl:mx-auto">
+		<navagation class="mx-8 gap-4 flex justify-between mt-2 xl:gap-8 xl:w-8/12 xl:inset-x-0 xl:mx-auto xl:fixed">
 			<a href="#home">
 				<h2 class="text-xl text-slate-800">JF.</h2>
 			</a>
@@ -57,7 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	</div>
 
 	<div class=" min-h-screen px-8 mb-8 xl:w-7/12 xl:mx-auto xl:px-0" id="experience">
-		<h1 class="text-3xl text-center mt-2 text-slate-800 xl:text-left">Experience</h1>
+		<h1 class="text-3xl text-center mt-2 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">Experience</h1>
 		<Job companyName="Agile5 Technologies" jobDates="January, 2022 - Present" jobTitle="Junior Software Developer" >
 			<li>Protoyped a modernized frontend solution for fdms.gov using SvelteKit & TailwindCSS</li>
 			<li>Collaborated closely with product managers, and stakeholders to gather requirements and translate them into architectural solutions for modernization.</li>
@@ -77,8 +77,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		</Job>
 	</div>
 
-	<div class="min-h-screen xl:w-7/12 xl:mx-auto" id="projects">
-		<h1 class="text-3xl text-center mt-2 mb-6 text-slate-800 xl:text-left">Projects</h1>
+	<div class="min-h-screen xl:w-7/12 xl:mx-auto " id="projects">
+		<h1 class="text-3xl text-center mt-2 mb-6 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">Projects</h1>
 		<Project projectName="curb." projectDescription="A digital publication site based around cycling culture" projectTech="SvelteKit, TailwindCSS, Pocketbase" websiteLink='https://curb.world' projectImage={curb}/>
 	</div>
 
