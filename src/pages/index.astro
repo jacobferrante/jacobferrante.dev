@@ -1,91 +1,155 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import githubIcon from "../assets/github.svg"
-import linkedinIcon from "../assets/linkedin.svg"
-import emailIcon from "../assets/email.svg"
-import headshot from "../assets/headshot.png"
-import curb from "../assets/curb.png"
-import Job from '../components/job.astro';
-import Project from '../components/project.astro';
-
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.svg";
+import emailIcon from "../assets/email.svg";
+import headshot from "../assets/headshot.png";
+import Job from "../components/job.astro";
+import Project from "../components/project.astro";
 ---
 
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+			document.querySelector(this.getAttribute("href")).scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+	});
 </script>
 
 <Layout>
-
-		<navagation class="mx-8 gap-4 flex justify-between mt-2 xl:gap-8 xl:w-8/12 xl:inset-x-0 xl:mx-auto xl:fixed">
-			<a href="#home">
-				<h2 class="text-xl text-slate-800">JF.</h2>
-			</a>
-			<a href="#experience" class="ml-auto">
-				<h2 class="text-md text-slate-800">Experience</h2>
-			</a>
-			<a href="#projects">
-				<h2 class="text-md text-slate-800">Projects</h2>
-			</a>
-		</navagation>	
+	<navagation
+		class="mx-8 gap-4 flex justify-between mt-2 xl:gap-8 xl:w-8/12 xl:inset-x-0 xl:mx-auto xl:fixed">
+		<a href="#home">
+			<h2 class="text-xl text-slate-800">JF.</h2>
+		</a>
+		<a href="#experience" class="ml-auto">
+			<h2 class="text-md text-slate-800">Experience</h2>
+		</a>
+		<a href="#projects">
+			<h2 class="text-md text-slate-800">Projects</h2>
+		</a>
+	</navagation>
 
 	<div class="h-screen px-8">
-		<div class="flex h-full justify-center items-center flex-col text-center" id="home">
-			<Image src={headshot} alt="headshot iamge of jacob ferrante" class="w-40 xl:w-56 h-auto mb-4"/>
-			<h1 class="text-3xl text-cyan-600 mb-4 font-bold inter-100 xl:text-6xl">Hi, I'm Jacob</h1>
-			<p class="text-lg font-bold text-slate-800 xl:text-2xl xl:w-4/12 2xl:3/12">A software developer based out of Morgantown, WV.</p>
-			<div class="border-y-2 border-cyan-600 mt-8 h-24 w-10/12 flex mx-auto flex-row justify-around items-center xl:w-2/12">
+		<div
+			class="flex h-full justify-center items-center flex-col text-center"
+			id="home">
+			<Image
+				src={headshot}
+				alt="headshot iamge of jacob ferrante"
+				class="w-40 xl:w-56 h-auto mb-4"
+			/>
+			<h1
+				class="text-3xl text-cyan-600 mb-4 font-bold inter-100 xl:text-6xl"
+			>
+				Hi, I'm Jacob
+			</h1>
+			<p class="text-lg font-bold text-slate-800 xl:text-2xl xl:w-4/12 2xl:3/12">
+				A software developer based out of Morgantown, WV.
+			</p>
+			<div
+				class="border-y-2 border-cyan-600 mt-8 h-24 w-10/12 flex mx-auto flex-row justify-around items-center xl:w-2/12"
+			>
 				<a href="https://github.com/jacobferrante">
-					<Image src={githubIcon} alt="github icon" class="w-8"/>
+					<Image src={githubIcon} alt="github icon" class="w-8" />
 				</a>
 				<a href="https://www.linkedin.com/in/jacobferrante/">
-					<Image src={linkedinIcon} alt="linkedin icon" class="w-8"/>
+					<Image src={linkedinIcon} alt="linkedin icon" class="w-8" />
 				</a>
 				<a href="mailto:jacobferrante@pm.me">
-					<Image src={emailIcon} alt="email icon" class="w-8"/>
+					<Image src={emailIcon} alt="email icon" class="w-8" />
 				</a>
 			</div>
 		</div>
 	</div>
 
-	<div class=" min-h-screen px-8 mb-8 xl:w-7/12 xl:mx-auto xl:px-0 " id="experience">
-		<h1 class="text-3xl text-center mt-2 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">Experience</h1>
-		<Job companyName="Agile5 Technologies" jobDates="January, 2022 - Present" jobTitle="Junior Software Developer" >
-			<li>Protoyped a modernized frontend solution for fdms.gov using SvelteKit & TailwindCSS</li>
-			<li>Collaborated closely with product managers, and stakeholders to gather requirements and translate them into architectural solutions for modernization.</li>
-			<li>Extended legacy EmberJS and Spring Boot code for new comment analysis features, used by over 50 federal agencies</li>
-			<li>Provided support for Tier 2 Help desk, and created documentation on the processes.</li>
+	<div class="min-h-screen px-8 mb-8 xl:w-7/12 xl:mx-auto xl:px-0" id="experience">
+		<h1 class="text-3xl text-center mt-2 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">
+			Experience
+		</h1>
+		<Job
+			companyName="Agile5 Technologies"
+			jobDates="January, 2022 - Present"
+			jobTitle="Junior Software Developer"
+		>
+			<li>
+				Protoyped a modernized frontend solution for fdms.gov using
+				SvelteKit & TailwindCSS
+			</li>
+			<li>
+				Collaborated closely with product managers, and stakeholders to
+				gather requirements and translate them into architectural
+				solutions for modernization.
+			</li>
+			<li>
+				Extended legacy EmberJS and Spring Boot code for new comment
+				analysis features, used by over 50 federal agencies
+			</li>
+			<li>
+				Provided support for Tier 2 Help desk, and created documentation
+				on the processes.
+			</li>
 		</Job>
-		<Job companyName="TransCore" jobDates="December, 2019 - September, 2022" jobTitle="Senior Technician" >
-			<li>Provisioned hardware for deployments such as embedded Linux & Windows systems, IP based PDUs, Network Switches, Terminal Servers.</li>
-			<li>Installed & Configured software on embedded systems to work in unison for road-tolling equipment. Streamlined software deployments using Anisble, BASH & Python.</li>
-			<li>Deployed and managed Snipe-It for asset tracking for all road-tolling equipment on Maine Turnpike. Managed Confluence site, created and provided documentation, service documents, employee  resources, etc.</li>
-			<li>Assisted the Maintenance Technicians with preventive maintenance and installation of equipment. Terminating CAT5 connections, installing in-lane loops, IP based cameras, etc.</li>
+		<Job
+			companyName="TransCore"
+			jobDates="December, 2019 - September, 2022"
+			jobTitle="Senior Technician"
+		>
+			<li>
+				Provisioned hardware for deployments such as embedded Linux &
+				Windows systems, IP based PDUs, Network Switches, Terminal
+				Servers.
+			</li>
+			<li>
+				Installed & Configured software on embedded systems to work in
+				unison for road-tolling equipment. Streamlined software
+				deployments using Anisble, BASH & Python.
+			</li>
+			<li>
+				Deployed and managed Snipe-It for asset tracking for all
+				road-tolling equipment on Maine Turnpike. Managed Confluence
+				site, created and provided documentation, service documents,
+				employee resources, etc.
+			</li>
+			<li>
+				Assisted the Maintenance Technicians with preventive maintenance
+				and installation of equipment. Terminating CAT5 connections,
+				installing in-lane loops, IP based cameras, etc.
+			</li>
 		</Job>
-		<Job companyName="Spark Applied Efficiency" jobDates="August, 2017 - December, 2019" jobTitle="HVAC/R Technician ">
-			<li>Installed, serviced, and commissioned Commerical Refrigeration, Hydronic, Air Quality equipment, etc.</li>
+		<Job
+			companyName="Spark Applied Efficiency"
+			jobDates="August, 2017 - December, 2019"
+			jobTitle="HVAC/R Technician "
+		>
+			<li>
+				Installed, serviced, and commissioned Commerical Refrigeration,
+				Hydronic, Air Quality equipment, etc.
+			</li>
 			<li>Kept service van stocked with parts, make order lists, etc.</li>
-			<li>Wrote out detailed service reports and communicated with customer to ensure they were happy with their services.</li>
+			<li>
+				Wrote out detailed service reports and communicated with
+				customer to ensure they were happy with their services.
+			</li>
 		</Job>
 	</div>
 
-	<div class="min-h-screen xl:w-7/12 xl:mx-auto " id="projects">
-		<h1 class="text-3xl text-center mt-2 mb-6 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8">Projects</h1>
-		<Project 
-			projectName="curb." 
-			projectDescription="A digital publication site based around cycling culture. Built using Sveltekit & TailwindCSS, utilizes a backend powered by Pocketbase." 
-			projectTech="SvelteKit, TailwindCSS, Pocketbase" 
-			websiteLink='https://curb.world'>
-		</Project>
+	<div class="min-h-screen xl:w-7/12 xl:mx-auto" id="projects">
+		<h1
+			class="text-3xl text-center mt-2 mb-6 text-slate-800 xl:text-left underline decoration-cyan-600 xl:underline-offset-8"
+		>
+			Projects
+		</h1>
+		<Project
+			projectName="curb."
+			projectDescription="A digital publication site based around cycling culture. Built using Sveltekit & TailwindCSS, utilizes a backend powered by Pocketbase."
+			projectTech="SvelteKit, TailwindCSS, Pocketbase"
+			websiteLink="https://curb.world"
+		/>
 	</div>
-
 </Layout>
-
